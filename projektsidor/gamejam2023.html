@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEjam2023</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        overflow: hidden;
+    }
+
+    .rotating-image {
+        width: 200px; /* Adjust the size as needed */
+        height: 200px;
+        animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body style=" background-color: rgb(56, 56, 61);">
+    <img src="gentleman.PNG" alt="Rotating" class="rotating-image">
+
+</body>
+</html>
