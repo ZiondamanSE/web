@@ -38,6 +38,7 @@
     font-size: 30px; /* Adjust font size as needed */
     text-shadow: 0 0 30px#00ff00a2, 0 0 400px #00ff00a6, 0 0 50px #00FF00; /* Glow effect */
     overflow: hidden;
+   
 }
 
 .projects
@@ -51,6 +52,7 @@
     font-size: 30px; /* Adjust font size as needed */
 
     text-shadow: 0 0 300px #00ff0017, 0 0 400px #00ff0027, 0 0 500px #00FF00; /* Glow effect */
+    
 
 }
 
@@ -117,10 +119,11 @@ body {
   #hoverballs:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease;
+    text-shadow: 0 20 30px#00ff00ee, 0 20 400px #00ff00f3, 0 20 50px #00FF00; /* Glow effect */
   }
 
   #hoverballs 
   {
     transform: scale(1);
     transition: transform 0.5s ease;
-  }
+  } 
