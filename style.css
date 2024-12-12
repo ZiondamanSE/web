@@ -112,3 +112,15 @@ body {
       90% { transform: translate(10%,5%) }
       100% { transform: translate(5%,0) }
   }
+
+
+  #hoverballs:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+
+  #hoverballs 
+  {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
