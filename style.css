@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.syncopate-regular {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }     
+  
+  .syncopate-bold {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .main a {
+    margin: 0 20px; /* Adds space between the links */
+    text-decoration: none;
+    display: inline-block; /* Maintains proper spacing and alignment */
+}
+
+.main
+{
+    font-family: "Syncopate", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: -50%;
+    min-height: 100vh;
+
+    font-size: 30px; /* Adjust font size as needed */
+    text-shadow: 0 0 30px#00ff00a2, 0 0 400px #00ff00a6, 0 0 50px #00FF00; /* Glow effect */
+    overflow: hidden;
+}
+
+.projects
+{
+    
+    font-family: "Syncopate", sans-serif;   
+    position: relative;
+    top: +100px;
+    left: +100px;
+    min-height: 100vh;
+    font-size: 30px; /* Adjust font size as needed */
+
+    text-shadow: 0 0 300px #00ff0017, 0 0 400px #00ff0027, 0 0 500px #00FF00; /* Glow effect */
+
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    /* Radial gradient in the background */
+    background: radial-gradient(circle, rgb(0, 0, 0), rgb(61, 61, 61) 200%), 
+                repeating-radial-gradient(circle, 
+                    rgba(255, 255, 255, 0.02) 0%, 
+                    rgba(0, 0, 0, 0.02) 2%, 
+                    rgba(255, 255, 255, 0.02) 4%
+                );
+
+    /* Blending and noise overlay */
+    background-blend-mode: multiply;
+    opacity: 0.4; /* Adjust for the right level of subtlety */
+    z-index: 1;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation 0.09s infinite;
+    opacity: 1;
+    visibility: visible;
+    z-index: -999;
+  }
+  
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  }
