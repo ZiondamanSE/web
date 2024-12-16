@@ -36,9 +36,14 @@
     min-height: 100vh;
 
     font-size: 30px; /* Adjust font size as needed */
-    text-shadow: 0 0 30px#00ff00a2, 0 0 400px #00ff00a6, 0 0 50px #00FF00; /* Glow effect */
+    text-shadow: 0 0 30px#019901a2, 0 0 400px #008b00a6, 0 0 50px #008e00; /* Glow effect */
     overflow: hidden;
    
+}
+
+.main:has(#hoverballs:hover) #hoverballs:not(:hover) {
+  transform: scale(0.9);
+  text-shadow: 0 0 30px#004400b1, 0 0 400px #004b00a6, 0 0 50px #004400; /* Glow effect */
 }
 
 .projects
@@ -51,7 +56,7 @@
     min-height: 100vh;
     font-size: 30px; /* Adjust font size as needed */
 
-    text-shadow: 0 0 300px #00ff0017, 0 0 400px #00ff0027, 0 0 500px #00FF00; /* Glow effect */
+    text-shadow: 0 0 300px #00ff0017, 0 0 400px #00ff0027, 0 0 500px #006700; /* Glow effect */
     
 
 }
